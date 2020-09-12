@@ -105,6 +105,10 @@ html {
   color: #96eada;
 }
 
+.nav__item__link-active {
+  color: #96eada;
+}
+
 .slider {
   -ms-grid-row: 2;
   grid-row: 2/2;
@@ -121,7 +125,7 @@ html {
   background: url("../img/sliderBg.jpg");
   background-size: cover;
   min-height: 70rem;
-  width: 168.19rem !important;
+  width: 166rem !important;
 }
 
 .slider-container__slide__cover {
@@ -259,7 +263,7 @@ html {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  padding: 2.5rem 0;
+  padding: 2.85rem 0;
 }
 
 .search-wrapp__heading {
@@ -283,7 +287,7 @@ html {
   height: 42px;
   width: 1px;
   right: 17%;
-  bottom: 80%;
+  bottom: 71%;
 }
 
 .search-wrapp__heading span {
@@ -485,6 +489,7 @@ html {
 }
 
 .tags__block_brick {
+  padding: 0 5px;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -579,6 +584,7 @@ html {
   height: 55px;
   cursor: pointer;
   border-radius: 4px;
+  font-weight: 700;
 }
 
 .slider-btn a {
@@ -595,5 +601,28 @@ html {
   width: 15.6rem;
   height: 53px;
   margin-left: 28px;
+}
+
+.the-datepicker__container {
+  left: 54px;
+  width: 84%;
+}
+
+.the-datepicker__main select.the-datepicker__select {
+  font-size: 1.5rem !important;
+}
+
+.the-datepicker__main .the-datepicker__body {
+  font-size: 1.5rem;
+}
+
+.the-datepicker__main table.the-datepicker__calendar {
+  display: table;
+  border-collapse: inherit !important;
+  padding: 0 1rem;
+}
+
+.the-datepicker__container .the-datepicker__main {
+  margin-top: 5px;
 }
 /*# sourceMappingURL=main.css.map */

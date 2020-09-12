@@ -7,7 +7,7 @@
 .search-wrapp{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    padding: 2.5rem 0;
+    padding: 2.85rem 0;
     &__heading{
         position: relative;
         grid-column: 2/2;
@@ -20,7 +20,7 @@
             height: 42px;
             width: 1px;
             right: 17%;
-            bottom: 80%;
+            bottom: 71%;
         }
         & span{
             font-weight: 400;

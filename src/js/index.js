@@ -14,5 +14,16 @@ $(function(){
         'margin':0
     });
 
-
   });
+
+
+
+
+  const formBtn = document.querySelector('.searchBtn').addEventListener('click',(e)=>{
+      e.preventDefault();
+  });
+  
+
+  const input = document.getElementById('datepicker');
+  const datepiker = new TheDatepicker.Datepicker(input);
+  datepiker.render();
