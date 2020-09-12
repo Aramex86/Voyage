@@ -1,0 +1,32 @@
+.header-wrapp{
+    grid-column: 2/span 4;
+    display: grid;
+    padding:1.7rem 0}
+
+.logo{
+    grid-column: 1/1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav{
+    grid-column: 2/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__item{
+        list-style: none;
+        padding: 0 2.8rem;
+        font-size: 1.2rem;
+        &__link{
+            text-decoration: none;
+            color:$color-primary-dark;
+            text-transform: uppercase;
+            font-weight: 500;
+            &:hover{
+                color:$color-primary-light2;
+            }
+        }
+        
+    }
+}

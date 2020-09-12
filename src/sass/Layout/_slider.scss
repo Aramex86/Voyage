@@ -1,0 +1,11 @@
+.slider-wrapp{
+    display: grid;
+    grid-column: 1/7;
+}
+
+.slider-slide{
+    background:url('../img/sliderBg.jpg');
+    background-position:center center;
+    background-size:cover ;
+    min-height: 80vh;
+}
