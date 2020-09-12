@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" href="/src/sass/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -34,19 +37,135 @@
           </li>
         </nav>
       </header>
-      <section class="slider-wrapp">
-        <div class="slider-slide"></div>
+      <section class="slider">
+        <div class="slider-container">
+          <div class="slider-container__slide">
+            <div class="slider-container__slide__cover"></div>
+            <div class="slider-text">
+              <h1 class="slider-text__heading">To travel is to live</h1>
+              <h2 class="slider-text__subheading">
+                You Don't Need Magic to Disappear. All you need is a
+                destination.
+              </h2>
+              <button class="slider-btn slider-btn_active">
+                <a href="#" class="slider-btn slider-btn_active"
+                  >SHOW ON THE MAP</a
+                >
+              </button>
+              <button class="slider-btn slider-btn_secondary">
+                <a href="#">MORE INFO</a>
+              </button>
+            </div>
+          </div>
+          <div class="slider-container__slide slider-container__slide2">
+            <div class="slider-container__slide__cover"></div>
+            <div class="slider-text">
+              <h1 class="slider-text__heading">To travel is to live</h1>
+              <h2 class="slider-text__subheading">
+                You Don't Need Magic to Disappear. All you need is a
+                destination.
+              </h2>
+              <button class="slider-btn slider-btn_active">
+                <a href="#" class="slider-btn slider-btn_active"
+                  >SHOW ON THE MAP</a
+                >
+              </button>
+              <button class="slider-btn slider-btn_secondary">
+                <a href="#">MORE INFO</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
+      <section class="search">
+        <div class="search-wrapp">
+          <div class="search-wrapp__heading">
+            <span>FIND YOUR <br><span class="bold">HOLYDAYS</span></span>
+          </div>
+          <form class="search-box">
+            <div class="search-box__destination">
+              <label for="destination">Where</label>
+              <input type="text" id="destination" placeholder="destination">
+              <img src="../src/icons/globe.png" alt="globe">
+            </div>
+            <div class="search-box__select">
+              <label for="select">When</label>
+              <input type="text" id="datepicker" placeholder="select date">
+              <img src="../src/icons/calendar.png" alt="calendar">
+            </div>
+            <button class="searchBtn">Search</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="newsleter"><span class="footer-heading">Newsletter</span>
+          <p>Duis autem vel eum iriure dolor in 
+            hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
+            <input type="text" placeholder="Subscribe...">
+            <button class="searchBtn searchBtn--footer">GO</button>
+        </div>
+        <div class="latestnews"><span class="footer-heading">Latest News</span>
+            <div class="latestnews-block">
+              <img src="../src/img/photodune.jpg" alt="pic">
+              <div class="latestnews-block__text">
+              <p>Postformat Gallery: Multiple 
+                images</p>
+              <p>October 21, 2013 - 3:31 pm</p>
+              </div>
+            </div>
+            <div class="latestnews-block">
+              <img src="../src/img/footerBoard.jpg" alt="pic">
+              <div class="latestnews-block__text">
+                <p>Snowboarding is fun!</p>
+                <p>December 12, 2012 - 9:11 pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="tags"><span class="footer-heading">Tags</span>  
+          <div class="tags__block">
+            <span class="tags__block_brick">Agent Login</span>
+            <span class="tags__block_brick">Customer Login</span>
+            <span class="tags__block_brick">Customer Login</span>
+            <span class="tags__block_brick">Contact</span>
+            <span class="tags__block_brick">New Horizons</span>
+            <span class="tags__block_brick">Lanscape</span>
+            <span class="tags__block_brick">Tags</span>
+            <span class="tags__block_brick">Nice</span>
+            <span class="tags__block_brick">Some</span>
+            <span class="tags__block_brick">Portrait</span>
+
+
+          </div>
+        
+        </div>
+        <div class="address"><span class="footer-heading">Address</span>
+        <p>DieSachbearbeiter Schönhauser Allee 167c,10435 Berlin Germany<br> <span>E-mail:</span> moin@blindtextgenerator.de</p>
+        <div class="address-social">
+          <a href="#">
+            <svg class="address-icon">
+            <use xlink:href="icons/icomoon/sprite.svg#icon-facebook"> </use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="address-icon">
+            <use xlink:href="icons/icomoon/sprite.svg#icon-twitter1"> </use>
+            </svg></a>
+          <a href="#">
+             <svg class="address-icon">
+            <use xlink:href="icons/icomoon/sprite.svg#icon-tumblr"> </use>
+            </svg></a>
+          <a href="#">
+            <svg class="address-icon">
+            <use xlink:href="icons/icomoon/sprite.svg#icon-pinterest"> </use>
+            </svg></a>
+        </div>
+        </div>
+        
+      </footer>
+     <span class="copy">Copyright &copyvoyage. All Right Reserved.</span>
     </div>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

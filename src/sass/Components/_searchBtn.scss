@@ -1,0 +1,20 @@
+.searchBtn{
+    width: 10.8rem;
+    height: 4.5rem;
+    background: $color-secondary-light;
+    border: none;
+    color:$color-primary;
+    font-weight: 500;
+    cursor: pointer;
+    &--footer{
+        width: 6rem;
+    height: 3.8rem;
+    background: #1dd2af;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    }
+}

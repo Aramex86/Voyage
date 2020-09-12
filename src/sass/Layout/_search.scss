@@ -1,0 +1,89 @@
+.search{
+    grid-row: 3/3;
+    grid-column: 1/-1;
+    //min-height: 103px;
+    background: $color-graybg;
+}
+.search-wrapp{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 2.5rem 0;
+    &__heading{
+        position: relative;
+        grid-column: 2/2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after{
+            content: url(../img/searchLine.png);
+            position: absolute;
+            height: 42px;
+            width: 1px;
+            right: 17%;
+            bottom: 80%;
+        }
+        & span{
+            font-weight: 400;
+            color:$color-gray2;
+            font-size: 1.5rem;
+        }
+        .bold{
+            font-weight: 700;
+            color:$color-primary;
+            font-size: 2rem;
+        }
+    }
+}
+
+.search-box{
+    grid-column: 3/6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__destination{
+position: relative;
+        margin-right: 20px;
+        & label{
+            color: $color-gray2;
+            font-size: 1.5rem;
+            //margin-right: 25px;
+            font-weight: 300;
+            margin-right: 13px;
+        }
+        & input{
+            padding: 1.4rem 1rem;
+            width: 26rem;
+            &::placeholder{
+                font-size: 1.5rem;
+            }
+        }
+         & img{
+             position: absolute;
+             right:5%;
+             top:25%;
+         }   
+    }
+    &__select{
+        position: relative;
+        margin-right: 20px;
+        & label{
+            color: $color-gray2;
+            font-size: 1.5rem;
+            //margin-right: 25px;
+            font-weight: 300;
+            margin-right: 13px;
+        }
+        & input{
+            padding: 1.4rem 1rem;
+            width: 26rem;
+            &::placeholder{
+                font-size: 1.5rem;
+            }
+        }
+        & img{
+            position: absolute;
+            right:5%;
+            top:25%;
+        }
+    }
+}

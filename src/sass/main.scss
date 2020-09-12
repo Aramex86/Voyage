@@ -1,9 +1,16 @@
 @import "./Abstract/fonts";
 @import "./Abstract/variables";
+
 @import "./Base/base";
+
 @import "./Layout/pageLayout";
 @import "./Layout/header";
 @import "./Layout/slider";
+@import "./Layout/search";
+@import "./Layout/footer";
+
+@import "./Components/searchBtn";
+@import "./Components/sliderBtn";
 
 
 

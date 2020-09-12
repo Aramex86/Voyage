@@ -1,0 +1,23 @@
+.slider-btn {
+  background: none;
+  outline: none;
+  border: none;
+  width: 20.2rem;
+  height: 55px;
+  cursor: pointer;
+  border-radius: 4px;
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+  &_active {
+    background: $color-secondary-light;
+  }
+
+  &_secondary {
+    border: 1px solid #ffffff;
+    width: 15.6rem;
+    height: 53px;
+    margin-left: 28px;
+  }
+}
