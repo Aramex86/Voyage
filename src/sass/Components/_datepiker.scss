@@ -1,18 +1,60 @@
-.the-datepicker__container{
-    left: 54px;
-    width: 84%;
+.the-datepicker__container {
+  left: 54px;
+  width: 84%;
+  @include respond(tab-land) {
+    width: 80%;
+  }
+  @include respond(phone) {
+    width: 45%;
+  }
+  @include respond(small-phone) {
+    width: 71%;
+  }
 }
-.the-datepicker__main select.the-datepicker__select{
+.the-datepicker__main select.the-datepicker__select {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  color: $color-graybg;
+  @include respond(tab-land) {
+    font-size: 1.3rem !important;
+  }
+}
+.the-datepicker__main .the-datepicker__body {
+  font-size: 1.5rem;
+  @include respond(tab-land) {
+    font-size: 1.3rem !important;
+  }
+  @include respond(phone) {
     font-size: 1.5rem !important;
+  }
 }
-.the-datepicker__main .the-datepicker__body{
-    font-size: 1.5rem;
+.the-datepicker__main table.the-datepicker__calendar {
+  display: table;
+  border-collapse: inherit !important;
+  padding: 0 1rem;
+  @include respond(tab-land) {
+    padding: 0 0;
+  }
 }
-.the-datepicker__main table.the-datepicker__calendar{
-    display: table;
-    border-collapse: inherit !important;
-    padding: 0 1rem;
+.the-datepicker__container .the-datepicker__main {
+  margin-top: 5px;
 }
-.the-datepicker__container .the-datepicker__main{
-    margin-top: 5px;
+.the-datepicker__main
+  td.the-datepicker__day
+  a.the-datepicker__button
+  .the-datepicker__day-content {
+  color: $color-secondary-light;
+  font-weight: 700;
+}
+
+.the-datepicker__main .the-datepicker__go {
+  @include respond(tab-land) {
+    width: 11% !important;
+  }
+}
+
+.the-datepicker__main .the-datepicker__state {
+  @include respond(tab-land) {
+    width: 77% !important;
+  }
 }

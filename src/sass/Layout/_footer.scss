@@ -5,26 +5,67 @@
   padding: 5rem 0;
   background: $color-footerbg;
   grid-template-columns: repeat(6, 1fr);
+  align-items: baseline;
+  @include respond(tab-land) {
+    grid-template-columns: 135px repeat(4, 1fr) 61px;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 30px repeat(4, 1fr) 10px;
+  }
+  @include respond(phone) {
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5rem 3rem;
+    justify-content: space-evenly;
+  }
+  @include respond(320) {
+    align-items: flex-start;
+    padding: 5rem 3rem;
+    flex-direction: column;
+  }
 }
 
 .footer-heading {
   font-size: 2rem;
   font-weight: 700;
   color: $color-secondary-light;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
 }
+// .icon-chevron-down {
+//   display: none;
+//   position: absolute;
+//   width: 20px;
+//   height: 20px;
+//   fill: $color-secondary-light;
+//   @include respond(320){
+//     display: block;
+//   }
+// }
 
 .newsleter {
   grid-column: 2/2;
+  @include respond(phone) {
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+  @include respond(320) {
+    display: none;
+  }
+
   & p {
     width: 80%;
     margin-top: 18px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 21px;
     color: $color-primary;
   }
   & input {
     margin-top: 18px;
-    padding: 1.1rem 1rem;
+    padding: 1rem 1rem;
     width: 40%;
     border-radius: 5px;
     border: none;
@@ -32,82 +73,113 @@
 }
 .latestnews {
   grid-column: 3/3;
-  &-block{
-      margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 84%;
+  @include respond(phone) {
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+  @include respond(320) {
+    display: none;
+  }
+
+  &-block {
+    margin-top: 18px;
     display: flex;
-    & img{
-        border: 1px solid white;
-    padding: 7px;
+    & img {
+      border: 1px solid white;
+      padding: 7px;
     }
-     &__text{
-         margin-left: 20px;
-         & p:nth-child(1){
-             color: $color-primary;
-             font-size: 1.3rem;
-             margin-bottom: 5px;
-         }
-         & p:nth-child(2){
-             color: $color-secondary-light;
-             font-size: 1.2rem;
-            
-         }
-     }
+    &__text {
+      margin-left: 20px;
+      & p:nth-child(1) {
+        color: $color-primary;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+      & p:nth-child(2) {
+        color: $color-secondary-light;
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 .tags {
-    padding: 0 2rem;
+  padding: 0 1rem;
+  width: 80%;
+  @include respond(phone) {
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+  @include respond(320) {
+    display: none;
+  }
+
   grid-column: 4/4;
-  &__block{
+  &__block {
     display: flex;
     flex-flow: row wrap;
     margin-left: -8px; /* Adjustment for the gutter */
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: $color-primary;
     margin-top: 18px;
-      &_brick{
-        padding: 0 5px;
-        flex: auto;
-        border: 1px solid $color-primary;
-        height: 17px;
-        min-width: 20px;
-        margin: 0 8px 8px 0; /* Some gutter */
-        
+    &_brick {
+      text-align: center;
+      padding: 0 5px;
+      flex: auto;
+      border: 1px solid $color-primary;
+      height: 17px;
+      min-width: 20px;
+      margin: 0 8px 8px 0; /* Some gutter */
+      @include respond(big-desktop) {
+        margin: 0 8px 13px 0; /* Some gutter */
       }
-      &_brick:nth-child(4+1) {
-        width: 45px;
-      }
-      &_brick:nth-child(4+2){
-          width: 105px;
-      }
-      
+    }
   }
 }
 .address {
   grid-column: 5/5;
-  & p{
+  width: 73%;
+  @include respond(phone) {
+    margin-bottom: 6rem;
+    width: 100%;
+  }
+  @include respond(320) {
+    display: none;
+  }
+
+  & p {
     margin-top: 8px;
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 23px;
-    & span{
+    & span {
       color: $color-secondary-light;
     }
+    @include respond(big-desktop) {
+      line-height: 32px;
+    }
   }
-  &-social{
+  &-social {
     display: flex;
     justify-content: flex-start;
   }
-  &-icon{
+  &-icon {
     fill: $color-primary;
     width: 20px;
     height: 20px;
     margin-right: 31px;
     margin-top: 22px;
+    @include respond(small-phone) {
+      margin-right: 16px;
+    }
   }
 }
 
-.copy{
+.copy {
   grid-row: 5/5;
   background: $color-footerbg;
   grid-column: 1/7;
@@ -115,4 +187,9 @@
   font-size: 1.3rem;
   padding: 2rem 0;
   color: $color-primary;
+  margin-top: 25px;
+  @include respond(320) {
+    margin-top: 0;
+    width: 100%;
+  }
 }

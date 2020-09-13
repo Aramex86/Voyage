@@ -1,89 +1,225 @@
-.search{
-    grid-row: 3/3;
-    grid-column: 1/-1;
-    //min-height: 103px;
-    background: $color-graybg;
+.search {
+  grid-row: 3/3;
+  grid-column: 1/-1;
+  //min-height: 103px;
+  background: $color-graybg;
 }
-.search-wrapp{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    padding: 2.85rem 0;
-    &__heading{
-        position: relative;
-        grid-column: 2/2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &::after{
-            content: url(../img/searchLine.png);
-            position: absolute;
-            height: 42px;
-            width: 1px;
-            right: 17%;
-            bottom: 71%;
-        }
-        & span{
-            font-weight: 400;
-            color:$color-gray2;
-            font-size: 1.5rem;
-        }
-        .bold{
-            font-weight: 700;
-            color:$color-primary;
-            font-size: 2rem;
-        }
-    }
-}
-
-.search-box{
-    grid-column: 3/6;
+.search-wrapp {
+  display: grid;
+  grid-template-columns: 281px 200px repeat(4, 1fr);
+  padding: 2.4rem 0;
+  @include respond(big-desktop) {
+    padding: 1.9rem 0;
+  }
+  @include respond(tab-land) {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  @include respond(tab-port) {
+    padding: 3.5rem 0;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+  }
+  &__heading {
+    position: relative;
+    grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    &__destination{
-position: relative;
-        margin-right: 20px;
-        & label{
-            color: $color-gray2;
-            font-size: 1.5rem;
-            //margin-right: 25px;
-            font-weight: 300;
-            margin-right: 13px;
-        }
-        & input{
-            padding: 1.4rem 1rem;
-            width: 26rem;
-            &::placeholder{
-                font-size: 1.5rem;
-            }
-        }
-         & img{
-             position: absolute;
-             right:5%;
-             top:25%;
-         }   
+    @include respond(tab-land) {
+      margin-right: 39px;
+      width: 25%;
+      justify-content: flex-end;
     }
-    &__select{
-        position: relative;
-        margin-right: 20px;
-        & label{
-            color: $color-gray2;
-            font-size: 1.5rem;
-            //margin-right: 25px;
-            font-weight: 300;
-            margin-right: 13px;
-        }
-        & input{
-            padding: 1.4rem 1rem;
-            width: 26rem;
-            &::placeholder{
-                font-size: 1.5rem;
-            }
-        }
-        & img{
-            position: absolute;
-            right:5%;
-            top:25%;
-        }
+    @include respond(tab-port) {
+      width: 23%;
     }
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &::after {
+      content: url(../img/searchLine.png);
+      position: absolute;
+      height: 42px;
+      width: 1px;
+      right: 17%;
+      bottom: 71%;
+      @include respond(big-desktop) {
+        height: 39px;
+      }
+      @include respond(tab-land) {
+        height: 43px;
+        right: -26%;
+      }
+      @include respond(phone) {
+        height: 43px;
+        left: 55%;
+        transform: rotate(90deg);
+        top: 70%;
+      }
+    }
+    & span {
+      font-weight: 400;
+      color: $color-gray2;
+      font-size: 2rem;
+    }
+    .bold {
+      font-weight: 700;
+      color: $color-primary;
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+.search-box {
+  grid-column: 3/7;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: flex-start;
+  margin-left: 8rem;
+  @include respond(tab-land) {
+    width: 80%;
+    justify-content: flex-start;
+    margin-left: 8rem;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  @include respond(phone) {
+    margin-left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 134px;
+    align-items: center;
+  }
+
+  &__destination {
+    position: relative;
+    margin-right: 20px;
+
+    @include respond(small-phone) {
+      text-align: center;
+    }
+    & label {
+      color: $color-gray2;
+      font-size: 2rem;
+      //margin-right: 25px;
+      font-weight: 300;
+      margin-right: 13px;
+    }
+    & input {
+      padding: 1.4rem 1rem;
+      width: 26rem;
+      &::placeholder {
+        font-size: 1.5rem;
+      }
+      @include respond(big-desktop) {
+        width: 22rem;
+      }
+      @include respond(tab-land) {
+        width: 20rem;
+      }
+      @include respond(phone) {
+        width: 50rem;
+      }
+      @include respond(small-phone) {
+        width: 30rem;
+        margin-top: 5px;
+      }
+    }
+    & img {
+      position: absolute;
+      right: 5%;
+      top: 25%;
+      @include respond(big-desktop) {
+        right: 5%;
+        top: 29%;
+        transform: translate(-29%, -5%);
+      }
+      @include respond(phone) {
+        right: 3%;
+        top: 23%;
+      }
+      @include respond(small-phone) {
+        right: 4%;
+        top: 33%;
+      }
+      @include respond(320) {
+        right: 9%;
+        top: 48%;
+      }
+    }
+  }
+  &__select {
+    position: relative;
+    margin-right: 20px;
+
+    @include respond(small-phone) {
+      text-align: center;
+    }
+    & label {
+      color: $color-gray2;
+      font-size: 2rem;
+      //margin-right: 25px;
+      font-weight: 300;
+      margin-right: 13px;
+      @include respond(phone) {
+        margin-right: 18px;
+      }
+    }
+    & input {
+      padding: 1.4rem 1rem;
+      width: 26rem;
+      color: $color-gray3;
+      font-size: 1.5rem;
+      font-weight: 400;
+      &::placeholder {
+        font-size: 1.5rem;
+      }
+      @include respond(big-desktop) {
+        width: 22rem;
+      }
+      @include respond(tab-land) {
+        width: 20rem;
+      }
+      @include respond(phone) {
+        width: 50rem;
+      }
+      @include respond(small-phone) {
+        width: 30rem;
+        margin-top: 5px;
+      }
+    }
+    & img {
+      position: absolute;
+      right: 5%;
+      top: 25%;
+      @include respond(big-desktop) {
+        right: 5%;
+        top: 29%;
+        transform: translate(-29%, -5%);
+      }
+      @include respond(phone) {
+        right: 3%;
+        top: 23%;
+      }
+      @include respond(small-phone) {
+        right: 4%;
+        top: 33%;
+      }
+      @include respond(320) {
+        right: 9%;
+        top: 48%;
+      }
+    }
+  }
 }

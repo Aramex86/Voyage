@@ -7,6 +7,11 @@
   cursor: pointer;
   border-radius: 4px;
   font-weight: 700;
+  @include respond(small-phone){
+    width: 14.2rem;
+    height: 43px;
+    font-size: 1.3rem;
+  }
   & a {
     text-decoration: none;
     color: $color-primary;
@@ -20,5 +25,10 @@
     width: 15.6rem;
     height: 53px;
     margin-left: 28px;
+    @include respond(small-phone){
+      width: 14.2rem;
+      height: 43px;
+      font-size: 1.3rem;
+    }
   }
 }
