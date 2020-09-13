@@ -6,9 +6,11 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
+    display: none;
     @include respond(phone){
         position: absolute;
         top:50%;
+        display: flex;
     }
     & span{
         position: absolute;

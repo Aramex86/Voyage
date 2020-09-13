@@ -50,10 +50,11 @@
   grid-column: 2/2;
   @include respond(phone) {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
   @include respond(320) {
-    display: none;
+    // display: none;
+    width:100%;
   }
 
   & p {
@@ -79,10 +80,11 @@
   width: 84%;
   @include respond(phone) {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
   @include respond(320) {
-    display: none;
+    // display: none;
+    width:100%;
   }
 
   &-block {
@@ -111,10 +113,11 @@
   width: 80%;
   @include respond(phone) {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
   @include respond(320) {
-    display: none;
+    // display: none;
+    width:100%;
   }
 
   grid-column: 4/4;
@@ -145,10 +148,11 @@
   width: 73%;
   @include respond(phone) {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
   @include respond(320) {
-    display: none;
+    // display: none;
+    width:100%;
   }
 
   & p {

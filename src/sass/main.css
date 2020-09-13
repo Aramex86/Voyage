@@ -585,6 +585,8 @@ html {
 @media only screen and (min-width: 112.5em) {
   .search-wrapp__heading::after {
     height: 39px;
+    right: -11%;
+    bottom: 70%;
   }
 }
 
@@ -953,13 +955,13 @@ html {
 @media only screen and (max-width: 37.5em) {
   .newsleter {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .newsleter {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -998,13 +1000,13 @@ html {
 @media only screen and (max-width: 37.5em) {
   .latestnews {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .latestnews {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -1045,13 +1047,13 @@ html {
 @media only screen and (max-width: 37.5em) {
   .tags {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .tags {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -1100,13 +1102,13 @@ html {
 @media only screen and (max-width: 37.5em) {
   .address {
     margin-bottom: 6rem;
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .address {
-    display: none;
+    width: 100%;
   }
 }
 
@@ -1368,12 +1370,16 @@ a.the-datepicker__button
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  display: none;
 }
 
 @media only screen and (max-width: 37.5em) {
   .burger-menu {
     position: absolute;
     top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

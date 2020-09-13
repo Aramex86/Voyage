@@ -53,6 +53,8 @@
       bottom: 71%;
       @include respond(big-desktop) {
         height: 39px;
+        right: -11%;
+        bottom: 70%;
       }
       @include respond(tab-land) {
         height: 43px;
