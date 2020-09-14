@@ -46,6 +46,12 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: $color-primary;
+  @include respond(big-desktop){
+    left: 43%;
+  }
+  @include respond(1400){
+    left: 43%;
+  }
   @include respond(tab-land){
     left: 45%;
   }
@@ -53,10 +59,19 @@
     left: 40%;
   }
   @include respond(phone){
+    left: 25%;
+    top: 41%;
+    transform: translate(-50%, -50%);
+  }
+  @include respond(600){
     left: 30%;
+    top: 41%;
+    transform: translate(-50%, -50%);
   }
   @include respond(small-phone){
-    left: 24%;
+    left: 21%;
+    top: 41%;
+    transform: translate(-50%, -50%);
 }
   @include respond(320){
     left: 19%;

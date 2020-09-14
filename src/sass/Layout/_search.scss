@@ -9,7 +9,10 @@
   grid-template-columns: 281px 200px repeat(4, 1fr);
   padding: 2.4rem 0;
   @include respond(big-desktop) {
-    padding: 1.9rem 0;
+    padding: 1.2rem 0;
+  }
+  @include respond(1400) {
+    padding: 1.2rem 0;
   }
   @include respond(tab-land) {
     display: flex;
@@ -28,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+   
     @include respond(tab-land) {
       margin-right: 39px;
       width: 25%;
@@ -51,6 +55,9 @@
       width: 1px;
       right: 17%;
       bottom: 71%;
+      @include respond(1400) {
+        height: 36px
+      }
       @include respond(big-desktop) {
         height: 39px;
         right: -11%;
@@ -147,6 +154,10 @@
         top: 29%;
         transform: translate(-29%, -5%);
       }
+      @include respond(1400) {
+        right: 8%;
+        top: 51%;
+      }
       @include respond(phone) {
         right: 3%;
         top: 23%;
@@ -190,6 +201,7 @@
       @include respond(big-desktop) {
         width: 22rem;
       }
+     
       @include respond(tab-land) {
         width: 20rem;
       }
@@ -209,6 +221,10 @@
         right: 5%;
         top: 29%;
         transform: translate(-29%, -5%);
+      }
+      @include respond(1400) {
+        right: 8%;
+        top: 51%;
       }
       @include respond(phone) {
         right: 3%;

@@ -26,6 +26,8 @@
     font-weight: 500;
     cursor: pointer;
     margin-left: 36px;
+  }@include respond(1400){
+   margin-top: 21px;
   }
   @include respond(small-phone){
     width: 26rem;
@@ -33,7 +35,6 @@
     margin-top: 15px;
   }
   @include respond(320){
-   
     width: 26rem;
     margin-left:0;
     margin-top: 15px;

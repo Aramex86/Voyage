@@ -16,6 +16,7 @@ $breakpoint argument choises:
 */
 
 @mixin respond($breakepoit){
+  
   @if $breakepoit == 320{
     @media only screen and (max-width: 20em){@content}; //320px
   }
@@ -23,7 +24,7 @@ $breakpoint argument choises:
     @media only screen and (max-width: 25em){@content}; //400px
   }
     @if $breakepoit == phone{
-      @media only screen and (max-width: 37.5em){@content}; //600px
+      @media only screen and (max-width: 48em){@content}; //767px
     }
     @if $breakepoit == tab-port{
       @media only screen and (max-width: 56.25em){@content}; //900px
@@ -31,6 +32,10 @@ $breakpoint argument choises:
     @if $breakepoit == tab-land{
       @media only screen and (max-width: 75em){@content}; //1200px
     }
+    @if $breakepoit == 1400{
+      @media only screen and (max-width: 87.5em){@content}; //1400px
+    }
+
     @if $breakepoit == big-desktop{
       @media only screen and (min-width: 112.5em){@content}; //1800px
     }

@@ -71,15 +71,21 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   html {
-    font-size: 37.5%;
+    font-size: 48%;
   }
 }
 
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  html {
+    font-size: 62.5%;
   }
 }
 
@@ -102,7 +108,7 @@ html {
       grid-template-columns: repeat(6, 1fr);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -130,7 +136,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .header-wrapp {
     gap: 20px;
     width: 100%;
@@ -193,7 +199,7 @@ html {
   color: #96eada;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .nav {
     -ms-grid-row: 2;
     grid-row: 2/2;
@@ -259,7 +265,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .slider-container__slide {
     width: 128rem !important;
   }
@@ -293,6 +299,18 @@ html {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 112.5em) {
+  .slider-text {
+    left: 43%;
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  .slider-text {
+    left: 43%;
+  }
+}
+
 @media only screen and (max-width: 75em) {
   .slider-text {
     left: 45%;
@@ -305,15 +323,21 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .slider-text {
-    left: 30%;
+    left: 25%;
+    top: 41%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 @media only screen and (max-width: 25em) {
   .slider-text {
-    left: 24%;
+    left: 21%;
+    top: 41%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -358,7 +382,7 @@ html {
   background: #60768194;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(1) {
     width: 60px !important;
     height: 60px !important;
@@ -390,7 +414,7 @@ html {
   transform: rotate(41deg);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(1)::before {
     left: 26px;
     top: 14px;
@@ -409,7 +433,7 @@ html {
   transform: rotate(-41deg);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(1)::after {
     left: 26px;
     top: 26px;
@@ -423,7 +447,7 @@ html {
   background: #60768194;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(2) {
     width: 60px !important;
     height: 60px !important;
@@ -455,7 +479,7 @@ html {
   transform: rotate(-41deg);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(2)::before {
     left: 26px;
     top: 14px;
@@ -474,7 +498,7 @@ html {
   transform: rotate(41deg);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .bx-controls-direction a:nth-child(2)::after {
     left: 26px;
     top: 26px;
@@ -498,7 +522,13 @@ html {
 
 @media only screen and (min-width: 112.5em) {
   .search-wrapp {
-    padding: 1.9rem 0;
+    padding: 1.2rem 0;
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  .search-wrapp {
+    padding: 1.2rem 0;
   }
 }
 
@@ -520,7 +550,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-wrapp {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -561,7 +591,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-wrapp__heading {
     margin-right: 0;
     margin-bottom: 4rem;
@@ -582,6 +612,12 @@ html {
   bottom: 71%;
 }
 
+@media only screen and (max-width: 87.5em) {
+  .search-wrapp__heading::after {
+    height: 36px;
+  }
+}
+
 @media only screen and (min-width: 112.5em) {
   .search-wrapp__heading::after {
     height: 39px;
@@ -597,7 +633,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-wrapp__heading::after {
     height: 43px;
     left: 55%;
@@ -653,7 +689,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-box {
     margin-left: 0;
     -webkit-box-orient: vertical;
@@ -721,7 +757,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-box__destination input {
     width: 50rem;
   }
@@ -749,7 +785,14 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 87.5em) {
+  .search-box__destination img {
+    right: 8%;
+    top: 51%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
   .search-box__destination img {
     right: 3%;
     top: 23%;
@@ -788,7 +831,7 @@ html {
   margin-right: 13px;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-box__select label {
     margin-right: 18px;
   }
@@ -830,7 +873,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .search-box__select input {
     width: 50rem;
   }
@@ -858,7 +901,14 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 87.5em) {
+  .search-box__select img {
+    right: 8%;
+    top: 51%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
   .search-box__select img {
     right: 3%;
     top: 23%;
@@ -901,6 +951,13 @@ html {
   }
 }
 
+@media only screen and (max-width: 87.5em) {
+  .footer {
+    -ms-grid-columns: 284px (1fr)[4] 61px;
+        grid-template-columns: 284px repeat(4, 1fr) 61px;
+  }
+}
+
 @media only screen and (max-width: 56.25em) {
   .footer {
     -ms-grid-columns: 30px (1fr)[4] 10px;
@@ -908,7 +965,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -952,7 +1009,7 @@ html {
   grid-column: 2/2;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .newsleter {
     margin-bottom: 6rem;
     width: 45%;
@@ -997,7 +1054,7 @@ html {
   width: 84%;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .latestnews {
     margin-bottom: 6rem;
     width: 45%;
@@ -1044,7 +1101,7 @@ html {
   grid-column: 4/4;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .tags {
     margin-bottom: 6rem;
     width: 45%;
@@ -1099,7 +1156,7 @@ html {
   width: 73%;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .address {
     margin-bottom: 6rem;
     width: 45%;
@@ -1195,7 +1252,7 @@ html {
   margin-left: 10px;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .searchBtn {
     width: 22rem;
     height: 4.7rem;
@@ -1205,6 +1262,12 @@ html {
     font-weight: 500;
     cursor: pointer;
     margin-left: 36px;
+  }
+}
+
+@media only screen and (max-width: 87.5em) {
+  .searchBtn {
+    margin-top: 21px;
   }
 }
 
@@ -1278,7 +1341,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .the-datepicker__container {
     width: 45%;
   }
@@ -1312,7 +1375,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .the-datepicker__main .the-datepicker__body {
     font-size: 1.5rem !important;
   }
@@ -1371,15 +1434,18 @@ a.the-datepicker__button
           align-items: center;
   position: relative;
   display: none;
+  width: 20px;
+  height: 20px;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 48em) {
   .burger-menu {
     position: absolute;
-    top: 50%;
+    top: 22%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    right: 67%;
   }
 }
 

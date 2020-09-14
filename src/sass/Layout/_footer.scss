@@ -9,6 +9,9 @@
   @include respond(tab-land) {
     grid-template-columns: 135px repeat(4, 1fr) 61px;
   }
+  @include respond(1400) {
+    grid-template-columns: 284px repeat(4, 1fr) 61px;
+  }
   @include respond(tab-port) {
     grid-template-columns: 30px repeat(4, 1fr) 10px;
   }
