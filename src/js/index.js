@@ -1,6 +1,5 @@
 $(function () {
-
-    //Slider
+  //Slider
   $(".slider-container").bxSlider({
     pager: false,
     moveSlides: 1,
@@ -22,24 +21,6 @@ $(function () {
     $(".nav").slideToggle();
     $(".nav").css("display", "flex");
   });
-
-  //if()
-//   $(document).on("click", ".footer-heading:eq(0)", function () {
-//     $(".newsleter").slideToggle();
-    
-//   });
-//   $(document).on("click", ".footer-heading:eq(1)", function () {
-//     $(".latestnews").slideToggle();
-    
-//   });
-//   $(document).on("click", ".footer-heading:eq(2)", function () {
-//     $(".tags").slideToggle();
-    
-//   });
-//   $(document).on("click", ".footer-heading:eq(3)", function () {
-//     $(".address").slideToggle();
-    
-//   });
 });
 
 const formBtn = document

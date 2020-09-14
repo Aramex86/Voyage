@@ -17,7 +17,6 @@
   }
   @include respond(phone) {
     display: flex;
-    //flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 5rem 3rem;
@@ -38,26 +37,15 @@
   position: relative;
   margin-bottom: 15px;
 }
-// .icon-chevron-down {
-//   display: none;
-//   position: absolute;
-//   width: 20px;
-//   height: 20px;
-//   fill: $color-secondary-light;
-//   @include respond(320){
-//     display: block;
-//   }
-// }
 
 .newsleter {
   grid-column: 2/2;
   @include respond(phone) {
     margin-bottom: 6rem;
-    width: 45%;
+    width: 55%;
   }
   @include respond(320) {
-    // display: none;
-    width:100%;
+    width: 100%;
   }
 
   & p {
@@ -73,6 +61,7 @@
     width: 40%;
     border-radius: 5px;
     border: none;
+    font-size: 1.5rem;
   }
 }
 .latestnews {
@@ -86,8 +75,7 @@
     width: 45%;
   }
   @include respond(320) {
-    // display: none;
-    width:100%;
+    width: 100%;
   }
 
   &-block {
@@ -119,15 +107,14 @@
     width: 45%;
   }
   @include respond(320) {
-    // display: none;
-    width:100%;
+    width: 100%;
   }
 
   grid-column: 4/4;
   &__block {
     display: flex;
     flex-flow: row wrap;
-    margin-left: -8px; /* Adjustment for the gutter */
+    margin-left: -8px;
     width: 100%;
     font-size: 1.2rem;
     color: $color-primary;
@@ -139,9 +126,9 @@
       border: 1px solid $color-primary;
       height: 17px;
       min-width: 20px;
-      margin: 0 8px 8px 0; /* Some gutter */
+      margin: 0 8px 8px 0;
       @include respond(big-desktop) {
-        margin: 0 8px 13px 0; /* Some gutter */
+        margin: 0 8px 13px 0;
       }
     }
   }
@@ -154,8 +141,7 @@
     width: 45%;
   }
   @include respond(320) {
-    // display: none;
-    width:100%;
+    width: 100%;
   }
 
   & p {

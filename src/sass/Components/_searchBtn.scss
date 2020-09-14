@@ -17,7 +17,7 @@
     border-radius: 5px;
     margin-left: 10px;
   }
-  @include respond(phone){
+  @include respond(phone) {
     width: 22rem;
     height: 4.7rem;
     background: #1dd2af;
@@ -26,19 +26,18 @@
     font-weight: 500;
     cursor: pointer;
     margin-left: 36px;
-  }@include respond(1400){
-   margin-top: 21px;
   }
-  @include respond(small-phone){
+  @include respond(1400) {
+    margin-top: 21px;
+  }
+  @include respond(small-phone) {
     width: 26rem;
     margin-left: 39;
     margin-top: 15px;
   }
-  @include respond(320){
+  @include respond(320) {
     width: 26rem;
-    margin-left:0;
+    margin-left: 0;
     margin-top: 15px;
-    
   }
-    
 }

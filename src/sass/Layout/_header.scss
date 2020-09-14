@@ -1,5 +1,5 @@
 .header-wrapp {
-    position: relative;
+  position: relative;
   grid-column: 2 / span 4;
   display: grid;
   padding: 1.7rem 0;
@@ -10,7 +10,6 @@
   @include respond(phone) {
     gap: 20px;
     width: 100%;
-    //grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -25,15 +24,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  //display: none;
   &__item {
     list-style: none;
     padding: 0 2.8rem;
     font-size: 1.2rem;
-    @include respond(small-phone){
-        padding: 1rem 2.8rem;
-        font-size: 1.5rem;
-      }
+    @include respond(small-phone) {
+      padding: 1rem 2.8rem;
+      font-size: 1.5rem;
+    }
     &__link {
       text-decoration: none;
       color: $color-primary-dark;
@@ -47,19 +45,17 @@
       }
     }
   }
-  @include respond(phone){
+  @include respond(phone) {
     grid-row: 2/2;
     grid-column: 1/-1;
     justify-content: center;
     display: none;
   }
-  @include respond(small-phone){
+  @include respond(small-phone) {
     grid-row: 2/2;
     grid-column: 1/-1;
     justify-content: center;
     display: none;
     flex-direction: column;
   }
-  
 }
-

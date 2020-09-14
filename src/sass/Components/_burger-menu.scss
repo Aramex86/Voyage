@@ -1,42 +1,42 @@
-.burger-menu{
-    grid-row: 1/1;
-    grid-column: 2/2;
-    text-align: end;
+.burger-menu {
+  grid-row: 1/1;
+  grid-column: 2/2;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  display: none;
+  width: 20px;
+  height: 20px;
+  @include respond(phone) {
+    position: absolute;
+    top: 22%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    display: none;
+    right: 67%;
+  }
+  & span {
+    position: absolute;
     width: 20px;
-    height: 20px;
-    @include respond(phone){
-        position: absolute;
-        top: 22%;
-        display: flex;
-        right: 67%;
+    height: 2px;
+    background: $color-secondary-light;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: $color-secondary-light;
+      top: 0.8rem;
+      left: 0;
     }
-    & span{
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background: $color-secondary-light;
-        &::before{
-            content: '';
-            position: absolute;
-        width: 25px;
-        height: 2px;
-        background: $color-secondary-light;
-        top: .8rem;
-        left: 0;
-        }
-        &::after{
-            content: '';
-            position: absolute;
-        width: 25px;
-        height: 2px;
-        background: $color-secondary-light;
-        bottom: .8rem;
-        left: 0;
-        }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: $color-secondary-light;
+      bottom: 0.8rem;
+      left: 0;
     }
+  }
 }

@@ -1,7 +1,6 @@
 .search {
   grid-row: 3/3;
   grid-column: 1/-1;
-  //min-height: 103px;
   background: $color-graybg;
 }
 .search-wrapp {
@@ -31,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-   
+
     @include respond(tab-land) {
       margin-right: 39px;
       width: 25%;
@@ -56,7 +55,7 @@
       right: 17%;
       bottom: 71%;
       @include respond(1400) {
-        height: 36px
+        height: 36px;
       }
       @include respond(big-desktop) {
         height: 39px;
@@ -68,8 +67,23 @@
         right: -26%;
       }
       @include respond(phone) {
+        content: url(../img/linemobile.png);
         height: 43px;
-        left: 55%;
+        left: 57%;
+        transform: rotate(90deg);
+        top: 70%;
+      }
+      @include respond(small-phone) {
+        content: url(../img/linemobile.png);
+        height: 43px;
+        left: 63%;
+        transform: rotate(90deg);
+        top: 70%;
+      }
+      @include respond(320) {
+        content: url(../img/linemobile.png);
+        height: 43px;
+        left: 68%;
         transform: rotate(90deg);
         top: 70%;
       }
@@ -121,7 +135,6 @@
     & label {
       color: $color-gray2;
       font-size: 2rem;
-      //margin-right: 25px;
       font-weight: 300;
       margin-right: 13px;
     }
@@ -182,7 +195,6 @@
     & label {
       color: $color-gray2;
       font-size: 2rem;
-      //margin-right: 25px;
       font-weight: 300;
       margin-right: 13px;
       @include respond(phone) {
@@ -201,7 +213,7 @@
       @include respond(big-desktop) {
         width: 22rem;
       }
-     
+
       @include respond(tab-land) {
         width: 20rem;
       }
